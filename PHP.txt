@@ -1,0 +1,48 @@
+<?php     ?>
+
+echo [   ];
+print  [   ];
+
+"~~~"."~~~"  : 문자열 합치기
+ strlen("~~~~"); : 문자 수 세기
+
+$a : a 변수 선언
+
+127.0.0.1/parameter.php?name=kimmstop&address=서울
+
+echo $_GET['name'];  :URL 파라미터 
+
+echo nl2br($str); : 편집기의 줄바꿈을 자동삽입
+
+echo file_get_contents("~~~"); 파일 불러오는 함수
+
+isset(   ) : 인자로 받은것이 null인지 아닌지 판단
+
+$arr = arrray('dasdas', 'qweqe');
+$arr[0]		:arr이름의 배열 생성
+count($arr) : arr배열 개수 반환
+array_push($arr, "Q");	:arr에 Q넣기
+
+scandir("string" ) :"string" 디렉터리 탐색->배열로 디렉터리안의 파일을 불러옴
+
+function func($par)	: func 라는 함수 생성/par 이라는 인자 전달
+{
+print("~~~~");
+return $par;
+}
+
+file_put_contents('qwer', func(3));  : 'qwer'의 파일에 func(3) 결과 넣기
+
+
+<form action="form.php" method="post"> :form.php 로 전달/ 데이터 전송 방식 결정->나중에 $_POST 로 받아야 함
+/method  지정하지 않으면 디폴트로 get 임
+<input type="text" name="title" placeholder="Title"> 
+: 사용자로부터 텍스트 입력 가능(입력값을 서버로 전달할 때 title이름으로 전달)(입력상자 안에 Title 글자 넣기)
+<textarea name="description"></textarea> : 여러줄을 입력할 수 있는 텍스트 폼이 나옴
+<input type="submit"> : submit 버튼 생성후 전달 가능
+</form>
+
+header('Location: /index.php?id='.$_POST['title']);   :사용자를 지정위치(/index.php?id=$_POST)로 리다이렉션
+
+
+
